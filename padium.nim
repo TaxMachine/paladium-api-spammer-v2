@@ -1,4 +1,4 @@
-import std/[locks, os, strutils, strformat], puppy
+import std/[locks, os, strutils], puppy
 
 proc clear(): void =
     if os.dirExists("C:\\Windows\\System32"):
@@ -30,7 +30,7 @@ proc spam(): void {.thread.} =
                 res = fetch(req)
             case res.code:
                 of 200:
-                    echo fmt"[+] Payload sent"
+                    echo "[+] Payload sent"
                 of 404:
                     echo "[-] Caca happened"
                 else:
