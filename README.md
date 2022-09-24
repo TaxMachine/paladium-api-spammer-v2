@@ -10,3 +10,8 @@ nim c -r padium.nim
 
 ## Commentaires
 mes boules sont dures
+
+## TODO
+- Implémenter un meilleur pattern d'unicode
+- Regarder si ce truc est vraiment utile
+- a
